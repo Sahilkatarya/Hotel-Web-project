@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 810px;
+        }
+        .auto-style3 {
+            height: 502px;
+        }
+        .auto-style4 {
+            height: 100px;
+        }
+        .auto-style6 {
+            width: 128px;
+            height: 100px;
+            color: #FFFFFF;
+            background-color: #FF9933;
+        }
+        .auto-style10 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                
+                <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style10">RAMADA</span><br class="auto-style10" />
+                    <span class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HOTEL</span></td>
+                <td class="auto-style4">
+                    &nbsp;
+                    <a href="Home.aspx"><asp:Label ID="Label1" runat="server" Text="HOME" style="color: #FF9933; font-weight: 700; font-size: large;"></asp:Label></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="AboutUs.aspx"><asp:Label ID="Label2" runat="server" Text="ABOUT US" style="color: #FF9933; font-weight: 700; font-size: large;"></asp:Label></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="ContactUs.aspx"><asp:Label ID="Label3" runat="server" Text="CONTACT US" style="color: #FF9933; font-weight: 700; font-size: large;"></asp:Label></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="BookNow.aspx"><asp:Label ID="Label4" runat="server" Text="BOOK NOW" style="color: #FF9933; font-weight: 700; font-size: large;"></asp:Label></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="3">&nbsp; 
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="auto-style4" colspan="3">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
