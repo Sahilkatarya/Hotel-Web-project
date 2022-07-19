@@ -1,1 +1,1 @@
-# Hotel-Web-project
+# HotelManagementSystem-Web-project
